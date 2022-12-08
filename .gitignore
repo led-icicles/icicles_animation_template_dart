@@ -7,3 +7,4 @@ build/
 generated/
 *.anim
 *.exe
+.DS_Store
