@@ -110,7 +110,7 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "v0.2.0"
+      ref: "v0.2.1"
       resolved-ref: "09a49fdb60acda4c1906d85ba2d7f6d4b70ba5d1"
       url: "https://github.com/led-icicles/icicles_animation_dart.git"
     source: git
