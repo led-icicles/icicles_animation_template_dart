@@ -64,6 +64,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.2"
+  equatable:
+    dependency: transitive
+    description:
+      name: equatable
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.5"
   file:
     dependency: transitive
     description:
@@ -103,8 +110,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "v0.1.0"
-      resolved-ref: ad2dbaa8c47f7271a33dcccdc0471dd8eb1c3ab7
+      ref: "v0.2.0"
+      resolved-ref: "09a49fdb60acda4c1906d85ba2d7f6d4b70ba5d1"
       url: "https://github.com/led-icicles/icicles_animation_dart.git"
     source: git
     version: "0.1.0"
