@@ -1,6 +1,6 @@
 name: icicles_animation_template_dart
 description: An icicles animation generator template.
-version: 0.1.0
+version: 1.0.0
 publish_to: none
 
 environment:
