@@ -20,7 +20,8 @@ The framerate of 60FPS is the upper maximum, which *should* work as well, but is
 ## Example & Visualizer
 In the `bin/animation.dart` file you can find the example animation implementation, that looks as follows: 
 ![police](readme/police.gif)
-You can download the visualizer APP **[HERE](https://github.com/led-icicles/icicles-audio-visualizer-v2/releases/download/v0.2.0/icicles-visualizer-0.2.0.Windows.exe)**
+### You can download the visualizer APP:
+- **[Windows](https://github.com/led-icicles/icicles-audio-visualizer-v2/releases/download/v0.2.0/icicles-visualizer-0.2.0.Windows.x64.exe)**
 ___
 ## Documentation
 Documentation of icicles_animation_dart can be found in the **[README](https://github.com/led-icicles/icicles_animation_dart#readme)** file.
