@@ -10,7 +10,7 @@ dependencies:
   icicles_animation_dart:
     git:
       url: https://github.com/led-icicles/icicles_animation_dart.git
-      ref: stable
+      ref: v1.3.0
 
 dev_dependencies:
   lints: ^2.0.0
