@@ -2,27 +2,29 @@
 import 'package:icicles_animation_dart/icicles_animation_dart.dart';
 
 void main() async {
-  /// Define the animation
+  /// Defines the animation settings.
   final animation = Animation(
-    // Animation name (UTF8) - may contain Polish characters
+    // Name of the animation (UTF-8 encoded - may include Polish characters).
     'Police',
-    // Number of icicles
+    // Number of icicles in the animation.
     xCount: 20,
-    // LEDs per icicle
+    // Number of pixels/LEDs per icicle.
     yCount: 30,
-    // Radio panels count
+    // Number of radio panels.
     radioPanelsCount: 2,
-    // How many times the animation will be played
+    // Resolution of each radio panel, specified as the number of pixels/LEDs.
+    radioPanelPixelCount: 50,
+    // Number of times the animation will loop.
     loopsCount: 10,
-    // The maxium animation framerate
+    // Maximum framerate for the animation.
     framerate: Framerate.fps30,
-    // Describes what happens if a frame is added with a higher framerate
-    // than supported
+    // Defines the behavior when a frame is added with a framerate
+    // higher than the supported limit.
     framerateBehavior: FramerateBehavior.error,
-    // Smaller file sizes, but not supported by controllers!
+    // If set to true, reduces file size using RGB565 color encoding.
     useRgb565: false,
-    // It removes redundant frames and uses the most size-efficient frames
-    // possible.
+    // Optimizes the animation by removing redundant frames and using
+    // the most size-efficient format available.
     optimize: true,
   );
 
@@ -33,11 +35,7 @@ void main() async {
   icicles.setAllPixelsColor(Color.fromRGB(255, 0, 0));
 
   /// Sets the radio panels color to red.
-  ///
-  /// LED of the panel with index 0 - stands for the broadcast
-  /// channel, thanks to that all available radio panels
-  /// will become red
-  icicles.setRadioPanelColor(0, Colors.red);
+  icicles.setAllRadioPanelsColor(Colors.red);
 
   /// Display the current icicles state for 500 milliseconds
   icicles.show(Duration(milliseconds: 500));
@@ -45,7 +43,7 @@ void main() async {
   /// The same steps for the blue color
   icicles
     ..setAllPixelsColor(Colors.blue)
-    ..setRadioPanelColor(0, Colors.blue)
+    ..setAllRadioPanelsColor(Colors.blue)
     ..show(Duration(milliseconds: 500));
 
   /// Thats all. Now we can save our animation
